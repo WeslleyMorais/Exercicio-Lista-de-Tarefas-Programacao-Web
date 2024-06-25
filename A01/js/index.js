@@ -1,0 +1,1 @@
+alert('Alert de um arquivo JS externo!')
