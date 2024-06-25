@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class Carro{
+            constructor(valor1, valor2, valor3){
+                this.marca = valor1;
+                this.modelo = valor2;
+                this.ano = valor3;
+            }
+            buzina(){
+                return this.modelo + ' buzinou: Biiiiiiii';
+            }
+        }
+
+       const uno = new Carro('fiat', 'Uno', 2001);
+       const gol = new Carro('VolksWagen', 'Gol', 2013);
+
+       alert(gol.buzina())
+    </script>
+</body>
+</html>
