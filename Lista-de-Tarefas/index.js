@@ -10,7 +10,7 @@ function addTarefa(){
         ++contador
     let novoItem = `<div id="${contador}" class="item">
         <div onclick="marcarTarefa(${contador})" class="item-icone">
-            <span class="material-symbols-outlined">
+            <span id="icone_${contador}" class="material-symbols-outlined">
         radio_button_unchecked
         </span>
         </div>
@@ -43,13 +43,17 @@ function deletar(id){
 function marcarTarefa(id){
     var item = document.getElementById(id);
     var classe = item.getAttribute('class');
+    var icone = document.getElementById('icone_'+id);
     if(classe == "item"){
         item.classList.add('clicado')
 
+        icone.textContent = 'check_circle'
+
+        item.parentNode.appendChild(item);
   
     }else{
         item.classList.remove('clicado')
-
+        icone.textContent = 'radio_button_unchecked'
     }
 
     }
