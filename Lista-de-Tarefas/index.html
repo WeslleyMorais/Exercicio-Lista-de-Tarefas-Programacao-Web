@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+</head>
+<body>
+    <h1>TASKS</h1>
+<header>
+    <input id="inputTarefa" type="text" placeholder="Digite sua tarefa">
+    <button onclick="addTarefa()" id="btnAdd" class="add"><span class="material-symbols-outlined">
+        library_add
+        </span>
+    </button>
+
+</header>
+
+<main id="areaLista">
+
+    <div class="item">
+        <div class="item-icone">
+            <span class="material-symbols-outlined">
+                radio_button_unchecked
+                </span>
+        </div>
+        <div class="item-nome">
+            teste
+
+        </div>
+        <div class="item-botao ">
+            <button id="delete"> <span class="material-symbols-outlined">
+                delete
+            </button>
+                </span>
+        </div>
+    </div>    
+    
+    
+    <div class="item clicado">
+        <div class="item-icone">
+            <span class="material-symbols-outlined">
+                check_circle
+                </span>
+        </div>
+        <div class="item-nome">
+            <p>teste</p>
+
+        </div>
+        <div class="item-botao ">
+            <button id="delete"> <span class="material-symbols-outlined">
+                delete
+            </button>
+                </span>
+        </div>
+    </div>   
+
+</main>
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
